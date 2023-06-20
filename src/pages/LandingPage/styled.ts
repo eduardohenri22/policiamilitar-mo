@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const StyledLanding = styled.div`
+  @import url("https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap");
+
   background-color: gray;
   background-size: cover;
   background-position: center;
@@ -42,9 +44,10 @@ export const StyledLanding = styled.div`
   }
 
   .h1LandingPage {
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 700;
     letter-spacing: 1rem;
+    font-family: "Tilt Prism", cursive;
   }
 
   .puff-in-center {
