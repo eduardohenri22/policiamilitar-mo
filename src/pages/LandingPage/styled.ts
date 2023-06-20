@@ -25,13 +25,16 @@ export const StyledLanding = styled.div`
     border-radius: 8px;
     border: transparent;
     cursor: pointer;
+    font-size: larger;
+    border: 1px solid transparent;
   }
 
   button:hover {
     background-color: red;
-    width: 100px;
+    width: 200px;
     transition: 0.5s;
     color: white;
+    border: 1px solid white;
   }
 
   img {
