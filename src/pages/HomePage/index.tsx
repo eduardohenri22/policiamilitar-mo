@@ -1,8 +1,22 @@
+import { Link } from "react-router-dom";
+import { StyledHome } from "./tyled";
+
 const HomePage = () => {
   return (
-    <div>
-      <h1>Boletim Page</h1>
-    </div>
+    <StyledHome>
+      <h1>Qual documento gostaria de gerar?</h1>
+      <div className="div_btn">
+        <Link className="btn_home" to={"/BoletimPage"}>
+          Boletim
+        </Link>
+        <Link className="btn_home" to={"/InqueritoPage"}>
+          Inquérito
+        </Link>
+        <Link className="btn_home" to={"/SancoesPage"}>
+          Sancões
+        </Link>
+      </div>
+    </StyledHome>
   );
 };
 
