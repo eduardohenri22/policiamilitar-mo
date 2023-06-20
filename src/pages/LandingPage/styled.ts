@@ -1,15 +1,14 @@
 import styled from "styled-components";
-
+import backgroundHome from "../../assets/backgroundHome.jpg";
 export const StyledLanding = styled.div`
-  @import url("https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
 
-  background-color: gray;
   background-size: cover;
   background-position: center;
   width: 100vw;
   height: 100vh;
   gap: 50px;
-
+  font-family: "Staatliches", cursive;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -47,9 +46,11 @@ export const StyledLanding = styled.div`
     font-size: 30px;
     font-weight: 700;
     letter-spacing: 1rem;
-    font-family: "Tilt Prism", cursive;
+    color: white;
   }
-
+  .logoMorumbi {
+    width: 80px;
+  }
   .puff-in-center {
     -webkit-animation: puff-in-center 0.7s cubic-bezier(0.47, 0, 0.745, 0.715)
       both;

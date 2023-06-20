@@ -4,6 +4,8 @@ import HomePage from "./pages/HomePage";
 import InqueritoPage from "./pages/InqueritoPage";
 import LandingPage from "./pages/LandingPage";
 import SancoesPage from "./pages/SancoesPage";
+import CertificadoPage from "./pages/CertificadoPage";
+import ConvocacaoPage from "./pages/ConvocacaoPage";
 
 const Router = () => {
   return (
@@ -13,6 +15,8 @@ const Router = () => {
       <Route path="/BoletimPage" element={<BoletimPage />} />
       <Route path="/InqueritoPage" element={<InqueritoPage />} />
       <Route path="/SancoesPage" element={<SancoesPage />} />
+      <Route path="/CertificadoPage" element={<CertificadoPage />} />
+      <Route path="/ConvocacaoPage" element={<ConvocacaoPage />} />
     </Routes>
   );
 };
