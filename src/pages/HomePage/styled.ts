@@ -44,4 +44,8 @@ export const StyledHome = styled.div`
     transform: scale(1.5);
     color: black;
   }
+
+  .btEmBreve {
+    background-color: black;
+  }
 `;

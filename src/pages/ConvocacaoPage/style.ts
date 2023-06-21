@@ -17,6 +17,11 @@ export const StyledConvocacao = styled.div`
     );
   }
 
+  .btLimpar {
+    position: absolute;
+    right: 150px;
+  }
+
   .logoMorumbi {
     position: absolute;
   }

@@ -17,6 +17,10 @@ export const StyledInquerito = styled.div`
     margin-bottom: 5px;
   }
 
+  .logoMorumbi {
+    position: absolute;
+  }
+
   img {
     width: 200px;
   }
@@ -44,8 +48,13 @@ export const StyledInquerito = styled.div`
   .divButtons {
     display: flex;
     justify-content: space-between;
-    margin-top: 90%;
+    margin-top: 50%;
     gap: 8px;
+  }
+
+  .logoComandoGeral {
+    position: absolute;
+    right: 80px;
   }
 
   button {
@@ -60,6 +69,7 @@ export const StyledInquerito = styled.div`
     border-radius: 10px;
     font-size: 20px;
     color: white;
+    animation: heartbeat 1s;
   }
 
   button:hover {
@@ -67,6 +77,11 @@ export const StyledInquerito = styled.div`
     transition: 0.4s;
     transform: scale(1.1);
     color: black;
+  }
+
+  .btLimpar {
+    position: absolute;
+    right: 90px;
   }
 
   .conteudoInquerito {
@@ -81,6 +96,15 @@ export const StyledInquerito = styled.div`
     height: 550px;
     right: 210px;
     animation: fade-in-top 0.8s;
+    background: rgb(164, 164, 164);
+    background: radial-gradient(
+      circle,
+      rgba(164, 164, 164, 1) 9%,
+      rgba(251, 251, 251, 1) 46%,
+      rgba(255, 255, 255, 1) 48%,
+      rgba(240, 237, 237, 1) 79%,
+      rgba(203, 203, 203, 1) 100%
+    );
   }
 
   .numeroInqueritoIntroducao {
@@ -130,7 +154,7 @@ export const StyledInquerito = styled.div`
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 70px;
+    margin-top: 15px;
   }
 
   .divAssinaturasContainer {
@@ -159,5 +183,79 @@ export const StyledInquerito = styled.div`
     margin-top: 30px;
     font-family: "Pinyon Script", cursive;
     font-size: 35px;
+  }
+
+  .heartbeat {
+    -webkit-animation: heartbeat 1.5s ease-in-out infinite both;
+    animation: heartbeat 1.5s ease-in-out infinite both;
+  }
+
+  @-webkit-keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transform-origin: center center;
+      transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+      transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+      transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+      transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+  }
+  @keyframes heartbeat {
+    from {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transform-origin: center center;
+      transform-origin: center center;
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+    10% {
+      -webkit-transform: scale(0.91);
+      transform: scale(0.91);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+    17% {
+      -webkit-transform: scale(0.98);
+      transform: scale(0.98);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
+    33% {
+      -webkit-transform: scale(0.87);
+      transform: scale(0.87);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+    45% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-animation-timing-function: ease-out;
+      animation-timing-function: ease-out;
+    }
   }
 `;

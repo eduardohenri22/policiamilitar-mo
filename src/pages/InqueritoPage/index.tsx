@@ -8,11 +8,14 @@ import logoComandoGeral from "../../assets/logoComandoGeral.png";
 import logoEmPm from "../../assets/logoEmPm.png";
 import logoPMESP from "../../assets/logoPMESP.png";
 import { StyledInquerito } from "./style";
+import logoMorumbi from "../../assets/logoMorumbi.png";
+import logoCorregedoria from "../../assets/logoCorregedoria.png";
 
 const InqueritoPage = () => {
   const [nomePolicial, setNomePolicial] = useState("");
   const [assinatura, setAssinatura] = useState("");
   const [numeroInquerito, setNumeroInquerito] = useState("");
+  const [conteudoInquerito, setConteudoInquerito] = useState("");
   const [convocacaoGeradaState, setConvocacaoGeradaState] = useState<any>(null);
 
   const recarregarPagina = () => {
@@ -41,13 +44,32 @@ const InqueritoPage = () => {
   };
 
   const gerarConvocacao = () => {
-    toast.success("GERADO COM SUCESSO");
+    toast.info(
+      " Perdão, A fonte não está correta? Clique na vassoura e digite os dados novamente",
+      {
+        position: "top-right",
+        autoClose: 7800,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      }
+    );
 
+    toast.success("GERADO COM SUCESSO", {
+      position: "top-right",
+      autoClose: 3800,
+    });
     const convocacaoGerada = (
       <div id="inqueritoGeradoId" className="conteudoInquerito">
+        <img src={logoMorumbi} alt="" className="logoMorumbi" />
+
         <div className="divImgs">
-          <img src={logoComandoGeral} alt="" />
-          <img src={logoEmPm} alt="logo" />
+          <img src={logoCorregedoria} alt="" />
+
+          <img src={logoPMESP} alt="logo" />
         </div>
         <div className="divIntroducaoInquerito">
           <div>
@@ -60,10 +82,7 @@ const InqueritoPage = () => {
         </div>
         <div className="divMainInquerito">
           <p>
-            A Corregedoria da Polícia Militar encerra por meio deste inquérito
-            Policial Militar de Inquérito <span>{numeroInquerito}</span> Tendo
-            como resultado a aplicação das sanções disciplinares, o desligamento
-            do Oficial Viegas, por corrupção militar.
+            {conteudoInquerito} <span>{numeroInquerito}</span>
           </p>
           <p>
             Policial Envolvido: <span>{nomePolicial}</span>
@@ -76,9 +95,9 @@ const InqueritoPage = () => {
             </p>
           </div>
           <div className="divAssinaturas">
-            <p>Comandante Geral da Policia Militar-CMTG-PM</p>
-            <p>Corregedor Geral da Policia Militar-DPM</p>
+            <p>Corregedor da Policia Militar-DPM</p>
           </div>
+          <img src={logoComandoGeral} alt="" className="logoComandoGeral" />
         </div>
       </div>
     );
@@ -89,7 +108,8 @@ const InqueritoPage = () => {
     <StyledInquerito>
       <div className="containerInquerito">
         <div className="introducao">
-          <img src={logoPMESP} alt="logo" />
+          <img src={logoCorregedoria} alt="logo" />
+          <img src={logoComandoGeral} alt="" />
           <div>
             <h1>Inquérito</h1>
             <h2>Corregedoria Da Policia Militar</h2>
@@ -113,6 +133,18 @@ const InqueritoPage = () => {
             placeholder="Assinante"
             value={assinatura}
             onChange={(e) => setAssinatura(e.target.value)}
+            required
+          />
+
+          <label htmlFor="conteudoInquerito">
+            Conteudo Abertura ou fechamento:
+          </label>
+          <input
+            id="conteudoInquerito"
+            type="text"
+            placeholder="EX: Venho por deste meio infor..."
+            value={conteudoInquerito}
+            onChange={(e) => setConteudoInquerito(e.target.value)}
             required
           />
 

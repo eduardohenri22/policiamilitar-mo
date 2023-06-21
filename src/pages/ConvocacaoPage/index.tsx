@@ -45,7 +45,24 @@ const ConvocacaoPage = () => {
   };
 
   const gerarConvocacao = () => {
-    toast.success("GERADO COM SUCESSO");
+    toast.info(
+      " Perdão, A fonte não está correta? Clique na vassoura e digite os dados novamente",
+      {
+        position: "top-right",
+        autoClose: 7800,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+      }
+    );
+
+    toast.success("GERADO COM SUCESSO", {
+      position: "top-right",
+      autoClose: 3800,
+    });
 
     const convocacaoGerada = (
       <div id="convocacaoGeradaId" className="conteudoConvocacao">
