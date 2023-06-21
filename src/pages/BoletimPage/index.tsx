@@ -35,7 +35,7 @@ const BoletimPage = () => {
 
         const link = document.createElement("a");
         link.href = dataURL;
-        link.download = "Convocacao Corregedoria.png"; // Especifique o nome do arquivo e a extensão desejada
+        link.download = "Boletim Interno"; // Especifique o nome do arquivo e a extensão desejada
 
         const event = new MouseEvent("click");
         link.dispatchEvent(event);
@@ -51,14 +51,36 @@ const BoletimPage = () => {
     const documentoGerado = (
       <div id="documentoId" className="conteudoBoletim">
         <div className="introducaoDoc">
+          <img src={instituicao} alt="" />
           <h1>Boletim Interno</h1>
           <img src={instituicao} alt="" />
+        </div>
+        <div className="divConteudoDoc">
+          <p className="pDoc">
+            1* PARTE SERVIÇOS DIÁRIOS:
+            <p>{servicos}</p>
+          </p>
+          <p className="pDoc">
+            2* PARTE INSTRUÇÂO E OPERAÇÔES POLICIAIS MILITARES:
+            <p>{instrucao}</p>
+          </p>
+          <p className="pDoc">
+            3* PARTE ASSUNTOS GERAIS E ADMINISTRATIVOS:
+            <p> {assunto}</p>
+          </p>
+          <p className="pDoc">
+            4* PARTE JUSTIÇA E DISCIPLINA:
+            <p>{justica}</p>
+          </p>
+          <div className="divAssina">
+            <p>ASSINA: {assinatura}</p>
+            <img src={logoMorumbi} />
+          </div>
         </div>
       </div>
     );
     setDocumentoGerado(documentoGerado);
   };
-
   return (
     <StyledBoletimInterno>
       <div className="containerBoletim">

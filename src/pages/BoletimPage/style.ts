@@ -18,6 +18,37 @@ export const StyledBoletimInterno = styled.div`
     width: 100px;
   }
 
+  .divAssina {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .introducaoDoc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .divConteudoDoc {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 1rem;
+    padding: 0.5rem;
+  }
+
+  .pDoc {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .introducaoDoc > h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
   button {
     cursor: pointer;
     text-decoration: none;
@@ -42,7 +73,7 @@ export const StyledBoletimInterno = styled.div`
   .divButtons {
     display: flex;
     justify-content: space-between;
-    margin-top: 85px;
+    margin-top: 190px;
     gap: 8px;
   }
 
@@ -55,7 +86,7 @@ export const StyledBoletimInterno = styled.div`
     border: 1px solid;
     top: 20px;
     width: 900px;
-    height: 550px;
+    min-height: 550px;
     right: 260px;
     animation: fade-in-top 0.8s;
   }
