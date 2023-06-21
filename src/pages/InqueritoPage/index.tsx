@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 import Carimbo from "../../components/Carimbo";
 import Convocacao from "../../components/Convocacao";
 import logoComandoGeral from "../../assets/logoComandoGeral.png";
-import logoEmPm from "../../assets/logoEmPm.png";
+
 import logoPMESP from "../../assets/logoPMESP.png";
 import { StyledInquerito } from "./style";
 import logoMorumbi from "../../assets/logoMorumbi.png";
@@ -113,6 +113,7 @@ const InqueritoPage = () => {
           <div>
             <h1>Inquérito</h1>
             <h2>Corregedoria Da Policia Militar</h2>
+            <h2>Comando Geral</h2>
           </div>
         </div>
         <div className="divInputs">
