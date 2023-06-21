@@ -1,10 +1,12 @@
 import { BsLinkedin } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { StyleDesenvolvidoPor } from "./style";
+
 const DesenvolvidoPor = () => {
   return (
     <StyleDesenvolvidoPor>
       <div className="divContainer">
+        <p>Desenvolvido por</p>
         <div className="linkedin">
           <Link
             className="link"

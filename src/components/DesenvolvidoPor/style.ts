@@ -2,6 +2,9 @@ import styled from "styled-components";
 
 export const StyleDesenvolvidoPor = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+  color: white;
+  display: flex;
+  flex-direction: column;
 
   .divContainer {
     display: flex;
