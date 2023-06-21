@@ -35,7 +35,7 @@ const BoletimPage = () => {
 
         const link = document.createElement("a");
         link.href = dataURL;
-        link.download = "Convocacao Corregedoria.png"; // Especifique o nome do arquivo e a extensão desejada
+        link.download = "Boletim Interno"; // Especifique o nome do arquivo e a extensão desejada
 
         const event = new MouseEvent("click");
         link.dispatchEvent(event);
