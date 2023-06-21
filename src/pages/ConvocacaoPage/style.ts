@@ -7,7 +7,19 @@ export const StyledConvocacao = styled.div`
   position: relative;
   justify-content: center;
   align-items: cente;
-  background-color: white;
+
+  .conteudoConvocacao {
+    background: rgb(124, 124, 124);
+    background: linear-gradient(
+      6deg,
+      rgba(124, 124, 124, 1) 0%,
+      rgba(203, 203, 203, 1) 63%
+    );
+  }
+
+  .logoMorumbi {
+    position: absolute;
+  }
 
   h1 {
     font-size: 35px;

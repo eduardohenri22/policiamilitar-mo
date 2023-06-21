@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 import logoCorregedoria from "../../assets/logoCorregedoria.png";
 import logoPMESP from "../../assets/logoPMESP.png";
+import logoMorumbi from "../../assets/logoMorumbi.png";
 import { StyledConvocacao } from "./style";
 import Convocacao from "../../components/Convocacao";
 import html2canvas from "html2canvas";
@@ -48,9 +49,11 @@ const ConvocacaoPage = () => {
 
     const convocacaoGerada = (
       <div id="convocacaoGeradaId" className="conteudoConvocacao">
+        <img src={logoMorumbi} alt="" className="logoMorumbi" />
+
         <div className="divImgs">
           <img src={logoCorregedoria} alt="" />
-          <img src={logoPMESP} alt="logo" />
+          <img src={logoPMESP} alt="logo" className="logoPMESP" />
         </div>
         <div className="divIntroducaoConvocacao">
           <div>
