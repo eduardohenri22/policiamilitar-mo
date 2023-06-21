@@ -62,9 +62,9 @@ const ConvocacaoPage = () => {
           <p>
             A Corregedoria da Polícia Militar convoca o policial militar{" "}
             <span>{nomeConvocado}</span> para prestar esclarecimentos, no dia{" "}
-            <span>{data}</span>, ás <span>{hora}</span> HRS horário de Brasília.
-            Local: <span>{local}</span>. O não comparecimento sem justificativa
-            acarretará em sanções disciplinares administrativas.
+            <span>{data}</span>, ás <span>{hora}</span> horas horário de
+            Brasília. Local: <span>{local}</span>. O não comparecimento sem
+            justificativa acarretará em sanções disciplinares administrativas.
           </p>
         </div>
         <div className="divAssinaturas">

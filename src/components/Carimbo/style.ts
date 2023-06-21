@@ -1,6 +1,8 @@
 import styled from "styled-components";
 
 export const StyledCarimbo = styled.div`
+  @import url("https://fonts.googleapis.com/css2?family=Mr+De+Haviland&display=swap");
+
   .carimbo {
     position: absolute;
     top: 450px;
@@ -8,29 +10,29 @@ export const StyledCarimbo = styled.div`
     bottom: 10px;
     width: 100px;
     height: 100px;
-    background-color: #ffffff;
     border-radius: 100%;
-    border: 5px solid rgb(0, 0, 0);
+    border: 8px solid rgb(0, 0, 0);
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #000000;
-    font-size: 16px;
+    font-size: 20px;
+    opacity: 80%;
     font-weight: bold;
   }
 
   .carimbo-texto {
     transform: rotate(-45deg);
     position: absolute;
-    border: 1px solid black;
+    border: 4px solid black;
     background-color: gray;
-    color: gray;
-    font-size: 20px;
-    opacity: 80%;
-    padding: 8px;
-    font-size: small;
-    font-family: "Pinyon Script", cursive;
+    border-radius: 8px;
     color: black;
-    font-weight: 600;
+    font-size: 38px;
+    opacity: 100%;
+    padding: 20px;
+    font-size: small;
+    font-family: "Mr De Haviland", cursive;
+    color: black;
+    font-weight: 700;
   }
 `;

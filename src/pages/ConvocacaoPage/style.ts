@@ -1,20 +1,18 @@
 import styled from "styled-components";
 
 export const StyledConvocacao = styled.div`
-  @import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
-  @import url("https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@300&display=swap");
-  @import url("https://fonts.googleapis.com/css2?family=Istok+Web&family=Josefin+Slab:wght@300&display=swap");
-  @import url("https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Mr+De+Haviland&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Mr+De+Haviland&display=swap");
   display: flex;
   position: relative;
   justify-content: center;
-  font-family: "Staatliches", cursive;
   align-items: cente;
   background-color: white;
 
   h1 {
     font-size: 35px;
     margin-bottom: 5px;
+    font-family: "Inter", sans-serif;
   }
 
   img {
@@ -108,7 +106,7 @@ export const StyledConvocacao = styled.div`
   }
 
   .divMainConvocacao p {
-    font-family: "Josefin Slab", serif;
+    font-family: "Inter", sans-serif;
     font-size: 22px;
     font-weight: 600;
     text-align: justify;
@@ -116,7 +114,7 @@ export const StyledConvocacao = styled.div`
   }
 
   .divMainConvocacao span {
-    font-family: "Istok Web", sans-serif;
+    font-family: "Courier New", Courier, monospace;
   }
 
   .divAssinaturas {
@@ -129,7 +127,7 @@ export const StyledConvocacao = styled.div`
 
   .h3assinatura {
     margin-top: 30px;
-    font-family: "Pinyon Script", cursive;
-    font-size: 35px;
+    font-family: "Mr De Haviland", cursive;
+    font-size: 45px;
   }
 `;
