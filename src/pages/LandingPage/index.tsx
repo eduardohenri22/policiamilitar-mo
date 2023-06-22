@@ -18,7 +18,6 @@ const LandingPage = () => {
         <img src={LogoPMESP} alt="logo" />
       </div>
       <img src={LogoMorumbi} alt="logomorumbi" className="logoMorumbi" />
-      <DesenvolvidoPor />
     </StyledLanding>
   );
 };

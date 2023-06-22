@@ -4,9 +4,16 @@ import logoPMESP from "../../assets/logoPMESP.png";
 import { useState } from "react";
 import logoBAEP from "../../assets/4BAEPlogo.png";
 import logoBPRV from "../../assets/5BPRVlogo.png";
-import logoCOE from "../../assets/COElogo.png";
+import logoCorregedoria from "../../assets/logoCorregedoria.png";
 import logoFT from "../../assets/FTlogo.png";
 import logoROTA from "../../assets/ROTAlogo.png";
+import logoBaep from "../../assets/baep.png";
+import operacoesEspeciais from "../../assets/operacoesespeciais.png";
+import logoComandoGeral from "../../assets/logoComandoGeral.png";
+import trigesimoBPM from "../../assets/37bpm.png";
+import logoAnchieta from "../../assets/anchieta.png";
+import cavPM from "../../assets/cavPM.png";
+import logoEMPM from "../../assets/logoEmPm.png";
 
 import html2canvas from "html2canvas";
 import { MdDownload, MdOutlineCleaningServices } from "react-icons/md";
@@ -144,11 +151,18 @@ const BoletimPage = () => {
             onChange={(e) => setInstituicao(e.target.value)}
           >
             <option value="">Selecionar</option>
-            <option value={logoBAEP}> 4º BAEP</option>
-            <option value={logoCOE}>COE</option>
-            <option value={logoFT}>Força Tatica</option>
-            <option value={logoROTA}>ROTA</option>
-            <option value={logoBPRV}>5º BPRV</option>
+            <option value={logoComandoGeral}> Comando Geral</option>
+            <option value={logoEMPM}> EM/PM</option>
+            <option value={logoCorregedoria}>DPM</option>
+            <option value={trigesimoBPM}>37º - BPM</option>
+            <option value={logoFT}>37º - FT</option>
+            <option value={cavPM}>37º - CAvPM</option>
+            <option value={logoBaep}>4º - BAEP</option>
+            <option value={logoROTA}>1º - ROTA</option>
+            <option value={logoAnchieta}>2º - ANCHIETA</option>
+            <option value={logoBPRV}>3º - HUMAITÁ</option>
+            <option value={operacoesEspeciais}>4º - Operações Especiais</option>
+            <option value={logoBPRV}>5º - BPRV</option>
           </select>
           <div className="divButtons">
             <button onClick={() => gerarDocumento()}>Gerar</button>
