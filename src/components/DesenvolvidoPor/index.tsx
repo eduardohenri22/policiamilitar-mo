@@ -26,6 +26,9 @@ const DesenvolvidoPor = () => {
             <BsLinkedin />
           </Link>
           <p>Lucas Henrique</p>
+          <div>
+            <p>Versão 1.0</p>
+          </div>
         </div>
       </div>
     </StyleDesenvolvidoPor>

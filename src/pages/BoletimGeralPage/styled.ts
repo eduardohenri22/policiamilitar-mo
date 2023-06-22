@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const StyledBoletimInterno = styled.div`
+export const StyledBoletimGeral = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
   @import url("https://fonts.googleapis.com/css2?family=Comforter&display=swap");
 
@@ -9,7 +9,6 @@ export const StyledBoletimInterno = styled.div`
   align-items: center;
   margin-top: 30px;
   font-family: "Roboto", sans-serif;
-  font-weight: 100;
 
   .divInputs {
     display: flex;

@@ -3,9 +3,10 @@ import BoletimPage from "./pages/BoletimPage";
 import HomePage from "./pages/HomePage";
 import InqueritoPage from "./pages/InqueritoPage";
 import LandingPage from "./pages/LandingPage";
-import SancoesPage from "./pages/SancoesPage";
+import Bole from "./pages/BoletimGeralPage";
 import CertificadoPage from "./pages/CertificadoPage";
 import ConvocacaoPage from "./pages/ConvocacaoPage";
+import BoletimGeralPage from "./pages/BoletimGeralPage";
 
 const Router = () => {
   return (
@@ -14,7 +15,7 @@ const Router = () => {
       <Route path="/home" element={<HomePage />} />
       <Route path="/BoletimPage" element={<BoletimPage />} />
       <Route path="/InqueritoPage" element={<InqueritoPage />} />
-      <Route path="/SancoesPage" element={<SancoesPage />} />
+      <Route path="/BoletimGeralPage" element={<BoletimGeralPage />} />
       <Route path="/CertificadoPage" element={<CertificadoPage />} />
       <Route path="/ConvocacaoPage" element={<ConvocacaoPage />} />
     </Routes>

@@ -1,4 +1,3 @@
-import { StyledBoletimInterno } from "./style";
 import logoMorumbi from "../../assets/logoMorumbi.png";
 import logoPMESP from "../../assets/logoPMESP.png";
 import { useState } from "react";
@@ -19,6 +18,7 @@ import html2canvas from "html2canvas";
 import { MdDownload, MdOutlineCleaningServices } from "react-icons/md";
 import { toast } from "react-toastify";
 import Convocacao from "../../components/Convocacao";
+import { StyledBoletimGeral } from "./styled";
 
 const BoletimPage = () => {
   const [servicos, setServicos] = useState<any>("");
@@ -59,28 +59,30 @@ const BoletimPage = () => {
       <div id="documentoId" className="conteudoBoletim">
         <div className="introducaoDoc">
           <img src={instituicao} alt="" />
-          <h1>Boletim Interno</h1>
+          <h1>BOLETIM GERAL</h1>
           <img src={instituicao} alt="" />
         </div>
         <div className="divConteudoDoc">
-          <p className="pDoc">
-            1* PARTE SERVIÇOS DIÁRIOS:
-            <p>{servicos}</p>
+          1º PARTE SERVIÇOS DIÁRIOS:
+          <p>
+            <p className="pDoc">{servicos}</p>
           </p>
-          <p className="pDoc">
-            2* PARTE INSTRUÇÂO E OPERAÇÔES POLICIAIS MILITARES:
-            <p>{instrucao}</p>
+          2º PARTE INSTRUÇÂO E OPERAÇÔES POLICIAIS MILITARES:
+          <p>
+            <p className="pDoc">{instrucao}</p>
           </p>
-          <p className="pDoc">
-            3* PARTE ASSUNTOS GERAIS E ADMINISTRATIVOS:
-            <p> {assunto}</p>
+          3º PARTE ASSUNTOS GERAIS E ADMINISTRATIVOS:
+          <p>
+            <p className="pDoc"> {assunto}</p>
           </p>
-          <p className="pDoc">
-            4* PARTE JUSTIÇA E DISCIPLINA:
-            <p>{justica}</p>
+          4º PARTE JUSTIÇA E DISCIPLINA:
+          <p>
+            <p className="pDoc">{justica}</p>
           </p>
           <div className="divAssina">
-            <p>ASSINA: {assinatura}</p>
+            <p>
+              ASSINA: <span>{assinatura}</span>
+            </p>
             <img src={logoMorumbi} />
           </div>
         </div>
@@ -89,12 +91,12 @@ const BoletimPage = () => {
     setDocumentoGerado(documentoGerado);
   };
   return (
-    <StyledBoletimInterno>
+    <StyledBoletimGeral>
       <div className="containerBoletim">
         <div className="introContainer">
-          <img src={logoPMESP} alt="" />
-          <h1>Policia Militar | BOLETIM INTERNO</h1>
-          <img src={logoPMESP} alt="" />
+          <img src={logoComandoGeral} alt="" />
+          <h1>Alto Comando | BOLETIM GERAL</h1>
+          <img src={logoEMPM} alt="" />
         </div>
         <div className="divH2">
           <h2> Preencha os campos abaixo!</h2>
@@ -151,16 +153,9 @@ const BoletimPage = () => {
             onChange={(e) => setInstituicao(e.target.value)}
           >
             <option value="">Selecionar</option>
-
-            <option value={trigesimoBPM}>37º - BPM</option>
-            <option value={logoFT}>37º - FT</option>
-            <option value={cavPM}>37º - CAvPM</option>
-            <option value={logoBaep}>4º - BAEP</option>
-            <option value={logoROTA}>1º - ROTA</option>
-            <option value={logoAnchieta}>2º - ANCHIETA</option>
-            <option value={logoBPRV}>3º - HUMAITÁ</option>
-            <option value={operacoesEspeciais}>4º - Operações Especiais</option>
-            <option value={logoBPRV}>5º - BPRV</option>
+            <option value={logoComandoGeral}> Comando Geral</option>
+            <option value={logoEMPM}> EM/PM</option>
+            <option value={logoCorregedoria}>DPM</option>
           </select>
           <div className="divButtons">
             <button onClick={() => gerarDocumento()}>Gerar</button>
@@ -176,7 +171,7 @@ const BoletimPage = () => {
         </div>
         <Convocacao convocacao={documentoGerado} />
       </div>
-    </StyledBoletimInterno>
+    </StyledBoletimGeral>
   );
 };
 

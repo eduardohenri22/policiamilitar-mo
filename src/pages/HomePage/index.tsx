@@ -21,6 +21,9 @@ const HomePage = () => {
       <AnimatedBackgroundDois />
       <h1>Qual documento gostaria de gerar?</h1>
       <div className="div_btn">
+        <Link className="btn_home" to={"/BoletimGeralPage"}>
+          Boletim Geral
+        </Link>
         <Link className="btn_home" to={"/BoletimPage"}>
           Boletim Interno
         </Link>
@@ -30,9 +33,6 @@ const HomePage = () => {
         <Link className="btn_home" to={"/InqueritoPage"}>
           Inquérito
         </Link>
-        <Link className="btn_home btEmBreve" to={"/SancoesPage"}>
-          Em breve
-        </Link>
         <Link className="btn_home btEmBreve" to={"/CertificadoPage"}>
           Em breve
         </Link>
@@ -40,6 +40,7 @@ const HomePage = () => {
       <div className="divImg">
         <img src={LogoPMESP} alt="logo" />
       </div>
+
       <DesenvolvidoPor />
     </StyledHome>
   );
