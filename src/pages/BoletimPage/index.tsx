@@ -13,11 +13,10 @@ import humaita from "../../assets/Humaita.png";
 import trigesimoBPM from "../../assets/37bpm.png";
 import logoAnchieta from "../../assets/Anchieta.png";
 import cavPM from "../../assets/cavPM.png";
-import logoEMPM from "../../assets/logoEmPm.png";
 
 import html2canvas from "html2canvas";
 import { MdDownload, MdOutlineCleaningServices } from "react-icons/md";
-import { toast } from "react-toastify";
+
 import Convocacao from "../../components/Convocacao";
 
 const BoletimPage = () => {
