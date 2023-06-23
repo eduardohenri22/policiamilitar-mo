@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { StyledHome } from "./styled";
 import AnimatedBackgroundDois from "../../components/AnimatedBackgroundHome";
-import LogoPMESP from "../../assets/logoPMESP.png";
+import LogoPMESP from "../../assets/logos/logoPMESP.png";
 import DesenvolvidoPor from "../../components/DesenvolvidoPor";
 import { toast } from "react-toastify";
 

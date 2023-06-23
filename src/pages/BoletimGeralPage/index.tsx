@@ -1,18 +1,9 @@
-import logoMorumbi from "../../assets/logoMorumbi.png";
-import logoPMESP from "../../assets/logoPMESP.png";
 import { useState } from "react";
-import logoBAEP from "../../assets/4BAEPlogo.png";
-import logoBPRV from "../../assets/5BPRVlogo.png";
-import logoCorregedoria from "../../assets/logoCorregedoria.png";
-import logoFT from "../../assets/FTlogo.png";
-import logoROTA from "../../assets/ROTAlogo.png";
-import logoBaep from "../../assets/baep.png";
-import operacoesEspeciais from "../../assets/operacoesespeciais.png";
-import logoComandoGeral from "../../assets/logoComandoGeral.png";
-import trigesimoBPM from "../../assets/37bpm.png";
-import logoAnchieta from "../../assets/anchieta.png";
-import cavPM from "../../assets/cavPM.png";
-import logoEMPM from "../../assets/logoEmPm.png";
+
+import logoMorumbi from "../../assets/logos/logoMorumbi.png";
+import logoCorregedoria from "../../assets/logos/logoCorregedoria.png";
+import logoComandoGeral from "../../assets/logos/logoComandoGeral.png";
+import logoEMPM from "../../assets/logos/logoEmPm.png";
 
 import html2canvas from "html2canvas";
 import { MdDownload, MdOutlineCleaningServices } from "react-icons/md";

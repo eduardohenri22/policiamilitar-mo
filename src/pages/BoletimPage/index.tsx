@@ -1,17 +1,16 @@
 import { useState } from "react";
 import { StyledBoletimInterno } from "./style";
-
-import logoMorumbi from "../../assets/logoMorumbi.png";
-import logoPMESP from "../../assets/logoPMESP.png";
-import logoBPRV from "../../assets/5BPRVlogo.png";
-import logoFT from "../../assets/FTlogo.png";
-import logoROTA from "../../assets/ROTAlogo.png";
-import logoBaep from "../../assets/logo_baep.png";
-import operacoesEspeciais from "../../assets/operacoesespeciais.png";
-import logoHumaita from "../../assets/Humaita.png";
-import trigesimoBPM from "../../assets/37bpm.png";
-import logoAnchieta from "../../assets/Anchieta.png";
-import cavPM from "../../assets/cavPM.png";
+import logoAnchieta from "../../assets/logos/logoAnchieta.png";
+import logoHumaita from "../../assets/logos/logoHumaita.png";
+import logoBAEP from "../../assets/logos/logoOperacaoEspeciais.png";
+import logoMorumbi from "../../assets/logos/logoMorumbi.png";
+import logoPMESP from "../../assets/logos/logoPMESP.png";
+import logoBPRV from "../../assets/logos/logoBPRV.png";
+import logoFT from "../../assets/logos/logoFT.png";
+import logoROTA from "../../assets/logos/logoROTA.png";
+import operacoesEspeciais from "../../assets/logos/logoOperacaoEspeciais.png";
+import logo37BPM from "../../assets/logos/logo37BPM.png";
+import cavPM from "../../assets/logos/logoCavPM.png";
 import html2canvas from "html2canvas";
 import { MdDownload, MdOutlineCleaningServices } from "react-icons/md";
 
@@ -150,10 +149,10 @@ const BoletimPage = () => {
             onChange={(e) => setInstituicao(e.target.value)}
           >
             <option value="">Selecionar</option>
-            <option value={trigesimoBPM}>37º - BPM</option>
+            <option value={logo37BPM}>37º - BPM</option>
             <option value={logoFT}>37º - FT</option>
             <option value={cavPM}>37º - CAvPM</option>
-            <option value={logoBaep}>4º - BAEP</option>
+            <option value={logoBAEP}>4º - BAEP</option>
             <option value={logoROTA}>1º - ROTA</option>
             <option value={logoAnchieta}>2º - ANCHIETA</option>
             <option value={logoHumaita}>3º - HUMAITÁ</option>;

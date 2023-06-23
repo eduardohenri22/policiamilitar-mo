@@ -2,14 +2,14 @@ import html2canvas from "html2canvas";
 import { useState } from "react";
 import { MdDownload, MdOutlineCleaningServices } from "react-icons/md";
 import { toast } from "react-toastify";
-import Carimbo from "../../components/Carimbo";
-import Convocacao from "../../components/Convocacao";
-import logoComandoGeral from "../../assets/logoComandoGeral.png";
 
-import logoPMESP from "../../assets/logoPMESP.png";
+import Convocacao from "../../components/Convocacao";
+import logoComandoGeral from "../../assets/logos/logoComandoGeral.png";
+
+import logoPMESP from "../../assets/logos/logoPMESP.png";
 import { StyledInquerito } from "./style";
-import logoMorumbi from "../../assets/logoMorumbi.png";
-import logoCorregedoria from "../../assets/logoCorregedoria.png";
+import logoMorumbi from "../../assets/logos/logoMorumbi.png";
+import logoCorregedoria from "../../assets/logos/logoCorregedoria.png";
 
 const InqueritoPage = () => {
   const [nomePolicial, setNomePolicial] = useState("");

@@ -1,9 +1,8 @@
 import { StyledLanding } from "./styled";
 import { Link } from "react-router-dom";
-import LogoPMESP from "../../assets/logoPMESP.png";
-import LogoMorumbi from "../../assets/logoMorumbi.png";
+import LogoPMESP from "../../assets/logos/logoPMESP.png";
+import LogoMorumbi from "../../assets/logos/logoMorumbi.png";
 import AnimatedBackground from "../../components/AnimatedBackground";
-import DesenvolvidoPor from "../../components/DesenvolvidoPor";
 
 const LandingPage = () => {
   return (

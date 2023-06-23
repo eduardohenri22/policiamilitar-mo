@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
-import logoCorregedoria from "../../assets/logoCorregedoria.png";
-import logoPMESP from "../../assets/logoPMESP.png";
-import logoMorumbi from "../../assets/logoMorumbi.png";
+import logoCorregedoria from "../../assets/logos/logoCorregedoria.png";
+import logoPMESP from "../../assets/logos/logoPMESP.png";
+import logoMorumbi from "../../assets/logos/logoMorumbi.png";
 import { StyledConvocacao } from "./style";
 import Convocacao from "../../components/Convocacao";
 import html2canvas from "html2canvas";
