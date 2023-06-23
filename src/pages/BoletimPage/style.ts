@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const StyledBoletimInterno = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
-  @import url("https://fonts.googleapis.com/css2?family=Comforter&display=swap");
+  @import url("https://fonts.googleapis.com/css2?family=Qwigley&display=swap");
 
   display: flex;
   justify-content: center;
@@ -78,7 +78,7 @@ export const StyledBoletimInterno = styled.div`
   span {
     left: 0px;
     justify-content: space;
-    font-family: "Comforter", cursive;
+    font-family: "Qwigley", cursive;
     font-size: 35px;
   }
 
@@ -104,10 +104,7 @@ export const StyledBoletimInterno = styled.div`
     background: rgb(164, 164, 164);
     background: radial-gradient(
       circle,
-      rgba(164, 164, 164, 1) 9%,
-      rgba(251, 251, 251, 1) 46%,
-      rgba(255, 255, 255, 1) 48%,
-      rgba(240, 237, 237, 1) 79%,
+      rgba(164, 164, 164, 1) 89%,
       rgba(203, 203, 203, 1) 100%
     );
   }

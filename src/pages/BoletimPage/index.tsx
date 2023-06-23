@@ -2,16 +2,16 @@ import { StyledBoletimInterno } from "./style";
 import logoMorumbi from "../../assets/logoMorumbi.png";
 import logoPMESP from "../../assets/logoPMESP.png";
 import { useState } from "react";
-import logoBAEP from "../../assets/4BAEPlogo.png";
+
 import logoBPRV from "../../assets/5BPRVlogo.png";
-import logoCorregedoria from "../../assets/logoCorregedoria.png";
+
 import logoFT from "../../assets/FTlogo.png";
 import logoROTA from "../../assets/ROTAlogo.png";
-import logoBaep from "../../assets/baep.png";
+import logoBaep from "../../assets/logo_baep.png";
 import operacoesEspeciais from "../../assets/operacoesespeciais.png";
-import logoComandoGeral from "../../assets/logoComandoGeral.png";
+import humaita from "../../assets/Humaita.png";
 import trigesimoBPM from "../../assets/37bpm.png";
-import logoAnchieta from "../../assets/anchieta.png";
+import logoAnchieta from "../../assets/Anchieta.png";
 import cavPM from "../../assets/cavPM.png";
 import logoEMPM from "../../assets/logoEmPm.png";
 
@@ -64,23 +64,25 @@ const BoletimPage = () => {
         </div>
         <div className="divConteudoDoc">
           <p className="pDoc">
-            1* PARTE SERVIÇOS DIÁRIOS:
+            1º PARTE SERVIÇOS DIÁRIOS:
             <p>{servicos}</p>
           </p>
           <p className="pDoc">
-            2* PARTE INSTRUÇÂO E OPERAÇÔES POLICIAIS MILITARES:
+            2º PARTE INSTRUÇÂO E OPERAÇÔES POLICIAIS MILITARES:
             <p>{instrucao}</p>
           </p>
           <p className="pDoc">
-            3* PARTE ASSUNTOS GERAIS E ADMINISTRATIVOS:
+            3º PARTE ASSUNTOS GERAIS E ADMINISTRATIVOS:
             <p> {assunto}</p>
           </p>
           <p className="pDoc">
-            4* PARTE JUSTIÇA E DISCIPLINA:
+            4º PARTE JUSTIÇA E DISCIPLINA:
             <p>{justica}</p>
           </p>
           <div className="divAssina">
-            <p>ASSINA: {assinatura}</p>
+            <p>
+              ASSINA: <span>{assinatura}</span>
+            </p>
             <img src={logoMorumbi} />
           </div>
         </div>
@@ -158,7 +160,7 @@ const BoletimPage = () => {
             <option value={logoBaep}>4º - BAEP</option>
             <option value={logoROTA}>1º - ROTA</option>
             <option value={logoAnchieta}>2º - ANCHIETA</option>
-            <option value={logoBPRV}>3º - HUMAITÁ</option>
+            <option value={humaita}>3º - HUMAITÁ</option>
             <option value={operacoesEspeciais}>4º - Operações Especiais</option>
             <option value={logoBPRV}>5º - BPRV</option>
           </select>
