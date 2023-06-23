@@ -9,7 +9,7 @@ import logoFT from "../../assets/FTlogo.png";
 import logoROTA from "../../assets/ROTAlogo.png";
 import logoBaep from "../../assets/logo_baep.png";
 import operacoesEspeciais from "../../assets/operacoesespeciais.png";
-import logoHumaita from "../../assets/Humaita.png";
+// import logoHumaita from "../../assets/Humaita.png";
 import trigesimoBPM from "../../assets/37bpm.png";
 import logoAnchieta from "../../assets/Anchieta.png";
 import cavPM from "../../assets/cavPM.png";
@@ -159,7 +159,7 @@ const BoletimPage = () => {
             <option value={logoBaep}>4º - BAEP</option>
             <option value={logoROTA}>1º - ROTA</option>
             <option value={logoAnchieta}>2º - ANCHIETA</option>
-            <option value={logoHumaita}>3º - HUMAITÁ</option>
+            {/* <option value={logoHumaita}>3º - HUMAITÁ</option> */}
             <option value={operacoesEspeciais}>4º - Operações Especiais</option>
             <option value={logoBPRV}>5º - BPRV</option>
           </select>
