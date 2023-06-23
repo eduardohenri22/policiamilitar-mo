@@ -34,7 +34,7 @@ const HomePage = () => {
           Inquérito
         </Link>
         <Link className="btn_home btEmBreve" to={"/CertificadoPage"}>
-          Em breve
+          Em breve!
         </Link>
       </div>
       <div className="divImg">
