@@ -27,7 +27,7 @@ const DesenvolvidoPor = () => {
           </Link>
           <p>Lucas Henrique</p>
           <div>
-            <p>Versão 1.1</p>
+            <p>Versão 1.4</p>
           </div>
         </div>
       </div>
