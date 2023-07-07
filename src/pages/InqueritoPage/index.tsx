@@ -17,7 +17,9 @@ const InqueritoPage = () => {
   const [numeroInquerito, setNumeroInquerito] = useState("");
   const [conteudoInquerito, setConteudoInquerito] = useState("");
   const [convocacaoGeradaState, setConvocacaoGeradaState] = useState<any>(null);
-
+  // const [abertura, setAbertura] = useState("A corregedoria da Policia Militar vem por meio deste informar a Fechamento  do inquérito Policial Militar:");
+  // const [fechamento, setFechamento] = useState("A corregedoria da Policia Militar vem por meio deste informar a Fechamento  do inquérito Policial Militar:")
+  const [selectedOption, setSelectedOption] = useState("");
   const recarregarPagina = () => {
     window.location.reload();
   };
@@ -41,6 +43,10 @@ const InqueritoPage = () => {
       .catch(function (error) {
         console.log("Ocorreu um erro ao capturar a div como imagem:", error);
       });
+  };
+
+  const handleChange = (event: any) => {
+    setSelectedOption(event.target.value);
   };
 
   const gerarConvocacao = () => {
@@ -75,15 +81,28 @@ const InqueritoPage = () => {
           <div>
             <h1>Inquérito</h1>
             <h2>Corregedoria Da Policia Militar Do Estado de São Paulo</h2>
-            <div className="numeroInqueritoIntroducao">
-              <span>{numeroInquerito}</span>
-            </div>
+            <div className="numeroInqueritoIntroducao"></div>
           </div>
         </div>
         <div className="divMainInquerito">
           <p>
             {conteudoInquerito} <span>{numeroInquerito}</span>
           </p>
+          {selectedOption === "opcao1" && (
+            <p>
+              A corregedoria da Policia Militar vem por meio deste informar a
+              Abertura do inquérito Policial Militar:
+              <span>{numeroInquerito}</span>
+            </p>
+          )}
+          {selectedOption === "opcao2" && (
+            <p>
+              A corregedoria da Policia Militar vem por meio deste informar a
+              Fechamento do inquérito Policial Militar:
+              <span>{numeroInquerito}</span>
+            </p>
+          )}
+
           <p>
             Policial Envolvido: <span>{nomePolicial}</span>
           </p>
@@ -138,16 +157,13 @@ const InqueritoPage = () => {
           />
 
           <label htmlFor="conteudoInquerito">
-            Conteudo Abertura ou fechamento:
+            Escolha Abertura ou fechamento:
           </label>
-          <input
-            id="conteudoInquerito"
-            type="text"
-            placeholder="EX: Venho por deste meio infor..."
-            value={conteudoInquerito}
-            onChange={(e) => setConteudoInquerito(e.target.value)}
-            required
-          />
+          <select value={selectedOption} onChange={handleChange}>
+            <option value="">Selecione aqui</option>
+            <option value="opcao1">Abertura</option>
+            <option value="opcao2">Fechamento</option>
+          </select>
 
           <label htmlFor="numeroInquerito">Número do Inquérito:</label>
           <input
@@ -158,6 +174,9 @@ const InqueritoPage = () => {
             onChange={(e) => setNumeroInquerito(e.target.value)}
             required
           />
+        </div>
+        <div className="divAviso">
+          <p>Desculpa Fonte não foi a ideal? Tente novamente</p>
         </div>
         <div className="divButtons">
           <button onClick={() => gerarConvocacao()}>Gerar</button>

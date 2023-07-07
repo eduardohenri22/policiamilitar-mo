@@ -48,7 +48,7 @@ export const StyledInquerito = styled.div`
   .divButtons {
     display: flex;
     justify-content: space-between;
-    margin-top: 50%;
+    margin-top: 30%;
     gap: 8px;
   }
 
@@ -157,6 +157,11 @@ export const StyledInquerito = styled.div`
     margin-top: 15px;
   }
 
+  select {
+    padding: 15px;
+    font-size: 15px;
+  }
+
   .divAssinaturasContainer {
     position: relative;
     display: flex;
@@ -183,6 +188,12 @@ export const StyledInquerito = styled.div`
     margin-top: 30px;
     font-family: "Pinyon Script", cursive;
     font-size: 35px;
+  }
+
+  .divAviso {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 20px;
   }
 
   .heartbeat {
