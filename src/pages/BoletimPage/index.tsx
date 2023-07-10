@@ -52,37 +52,49 @@ const BoletimPage = () => {
 
   const gerarDocumento = () => {
     const documentoGerado = (
-      <div id="documentoId" className="conteudoBoletim">
-        <div className="introducaoDoc">
-          <img src={instituicao} alt="" />
-          <h1>Boletim Interno</h1>
-          <img src={instituicao} alt="" />
-        </div>
-        <div className="divConteudoDoc">
-          <p className="pDoc">
-            1º PARTE SERVIÇOS DIÁRIOS:
-            <p>{servicos}</p>
-          </p>
-          <p className="pDoc">
-            2º PARTE INSTRUÇÂO E OPERAÇÔES POLICIAIS MILITARES:
-            <p>{instrucao}</p>
-          </p>
-          <p className="pDoc">
-            3º PARTE ASSUNTOS GERAIS E ADMINISTRATIVOS:
-            <p> {assunto}</p>
-          </p>
-          <p className="pDoc">
-            4º PARTE JUSTIÇA E DISCIPLINA:
-            <p>{justica}</p>
-          </p>
-          <div className="divAssina">
-            <p>
-              ASSINA: <span>{assinatura}</span>
+      <>
+        <div id="documentoId" className="conteudoBoletim">
+          <div className="introducaoDoc">
+            <img src={instituicao} alt="" />
+            <h1>Boletim Interno</h1>
+            <img src={instituicao} alt="" />
+          </div>
+          <div className="divConteudoDoc">
+            <p className="pDoc">
+              1º PARTE SERVIÇOS DIÁRIOS:
+              <p>{servicos}</p>
             </p>
-            <img src={logoMorumbi} />
+            <p className="pDoc">
+              2º PARTE INSTRUÇÂO E OPERAÇÔES POLICIAIS MILITARES:
+              <p>{instrucao}</p>
+            </p>
+            <p className="pDoc">
+              3º PARTE ASSUNTOS GERAIS E ADMINISTRATIVOS:
+              <p> {assunto}</p>
+            </p>
+            <p className="pDoc">
+              4º PARTE JUSTIÇA E DISCIPLINA:
+              <p>{justica}</p>
+            </p>
+            <div className="divAssina">
+              <p>
+                ASSINA: <span>{assinatura}</span>
+              </p>
+              <img src={logoMorumbi} />
+            </div>
           </div>
         </div>
-      </div>
+        <div className="divButtons">
+          <div>
+            <button onClick={donwloadDocumento}>
+              <MdDownload />
+            </button>
+            <button onClick={recarregarPagina}>
+              <MdOutlineCleaningServices />
+            </button>
+          </div>
+        </div>
+      </>
     );
     setDocumentoGerado(documentoGerado);
   };
@@ -159,17 +171,9 @@ const BoletimPage = () => {
             <option value={operacoesEspeciais}>4º - Operações Especiais</option>
             <option value={logoBPRV}>5º - BPRV</option>
           </select>
-          <div className="divButtons">
-            <button onClick={() => gerarDocumento()}>Gerar</button>
-            <div>
-              <button onClick={donwloadDocumento}>
-                <MdDownload />
-              </button>
-              <button onClick={recarregarPagina}>
-                <MdOutlineCleaningServices />
-              </button>
-            </div>
-          </div>
+          <button id="btGerar" onClick={() => gerarDocumento()}>
+            Gerar
+          </button>
         </div>
         <Convocacao convocacao={documentoGerado} />
       </div>

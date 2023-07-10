@@ -84,8 +84,9 @@ export const StyledBoletimInterno = styled.div`
 
   .divButtons {
     display: flex;
+    flex-direction: row;
+    width: 100%;
     justify-content: space-between;
-    margin-top: 190px;
     gap: 8px;
   }
 
@@ -102,6 +103,10 @@ export const StyledBoletimInterno = styled.div`
     right: 350px;
     animation: fade-in-top 0.8s;
     background: rgb(164, 164, 164);
+  }
+
+  #btGerar {
+    margin-top: 60px;
   }
 
   input {

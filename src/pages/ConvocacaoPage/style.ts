@@ -98,7 +98,7 @@ export const StyledConvocacao = styled.div`
     top: 20px;
     width: 900px;
     height: 550px;
-    right: 260px;
+    right: 320px;
     animation: fade-in-top 0.8s;
   }
 
