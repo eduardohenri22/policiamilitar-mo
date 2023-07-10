@@ -85,14 +85,12 @@ const BoletimPage = () => {
           </div>
         </div>
         <div className="divButtons">
-          <div>
-            <button onClick={donwloadDocumento}>
-              <MdDownload />
-            </button>
-            <button onClick={recarregarPagina}>
-              <MdOutlineCleaningServices />
-            </button>
-          </div>
+          <button onClick={donwloadDocumento}>
+            <MdDownload />
+          </button>
+          <button onClick={recarregarPagina}>
+            <MdOutlineCleaningServices />
+          </button>
         </div>
       </>
     );

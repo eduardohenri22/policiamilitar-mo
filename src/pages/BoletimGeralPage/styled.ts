@@ -87,6 +87,7 @@ export const StyledBoletimGeral = styled.div`
     flex-direction: row;
     justify-content: space-between;
     gap: 8px;
+    right: 0px;
     bottom: 120px;
   }
 

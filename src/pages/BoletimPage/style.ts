@@ -83,11 +83,13 @@ export const StyledBoletimInterno = styled.div`
   }
 
   .divButtons {
+    position: absolute;
     display: flex;
     flex-direction: row;
-    width: 100%;
     justify-content: space-between;
     gap: 8px;
+    right: 0px;
+    bottom: 120px;
   }
 
   .conteudoBoletim {

@@ -59,12 +59,14 @@ export const StyledConvocacao = styled.div`
     gap: 80px;
     align-items: center;
   }
-
   .divButtons {
+    position: absolute;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    margin-top: 85px;
     gap: 8px;
+    right: 0px;
+    bottom: 120px;
   }
 
   button {

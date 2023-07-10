@@ -46,10 +46,13 @@ export const StyledInquerito = styled.div`
   }
 
   .divButtons {
+    position: absolute;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    margin-top: 30%;
     gap: 8px;
+    right: 0px;
+    bottom: 120px;
   }
 
   .logoComandoGeral {
