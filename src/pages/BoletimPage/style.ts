@@ -99,14 +99,9 @@ export const StyledBoletimInterno = styled.div`
     top: 20px;
     width: 900px;
     min-height: 550px;
-    right: 260px;
+    right: 350px;
     animation: fade-in-top 0.8s;
     background: rgb(164, 164, 164);
-    background: radial-gradient(
-      circle,
-      rgba(164, 164, 164, 1) 89%,
-      rgba(203, 203, 203, 1) 100%
-    );
   }
 
   input {

@@ -82,10 +82,12 @@ export const StyledBoletimGeral = styled.div`
   }
 
   .divButtons {
+    position: absolute;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    margin-top: 190px;
     gap: 8px;
+    bottom: 120px;
   }
 
   .conteudoBoletim {
@@ -98,17 +100,13 @@ export const StyledBoletimGeral = styled.div`
     top: 20px;
     width: 900px;
     min-height: 550px;
-    right: 260px;
+    right: 350px;
     animation: fade-in-top 0.8s;
     background: rgb(164, 164, 164);
-    background: radial-gradient(
-      circle,
-      rgba(164, 164, 164, 1) 9%,
-      rgba(251, 251, 251, 1) 46%,
-      rgba(255, 255, 255, 1) 48%,
-      rgba(240, 237, 237, 1) 79%,
-      rgba(203, 203, 203, 1) 100%
-    );
+  }
+
+  #btGerar {
+    margin-top: 60px;
   }
 
   input {

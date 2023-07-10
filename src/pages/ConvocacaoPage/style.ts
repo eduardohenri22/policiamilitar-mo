@@ -32,6 +32,10 @@ export const StyledConvocacao = styled.div`
     font-family: "Inter", sans-serif;
   }
 
+  #btGerar {
+    margin-top: 60px;
+  }
+
   img {
     width: 200px;
   }

@@ -97,20 +97,16 @@ export const StyledInquerito = styled.div`
     right: 210px;
     animation: fade-in-top 0.8s;
     background: rgb(164, 164, 164);
-    background: radial-gradient(
-      circle,
-      rgba(164, 164, 164, 1) 9%,
-      rgba(251, 251, 251, 1) 46%,
-      rgba(255, 255, 255, 1) 48%,
-      rgba(240, 237, 237, 1) 79%,
-      rgba(203, 203, 203, 1) 100%
-    );
   }
 
   .numeroInqueritoIntroducao {
     display: flex;
     justify-content: center;
     margin-top: 18px;
+  }
+
+  #btGerar {
+    margin-top: 60px;
   }
 
   .divIntroducaoInquerito {

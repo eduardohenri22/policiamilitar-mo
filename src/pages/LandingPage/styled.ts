@@ -42,6 +42,10 @@ export const StyledLanding = styled.div`
     width: 250px;
   }
 
+  #btGerar {
+    margin-top: 60px;
+  }
+
   .h1LandingPage {
     font-size: 30px;
     font-weight: 700;

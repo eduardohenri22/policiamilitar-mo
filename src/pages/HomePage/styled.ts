@@ -27,6 +27,10 @@ export const StyledHome = styled.div`
     gap: 2rem;
   }
 
+  #btGerar {
+    margin-top: 60px;
+  }
+
   .btn_home {
     text-decoration: none;
     display: flex;
