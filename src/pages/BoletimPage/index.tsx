@@ -50,6 +50,17 @@ const BoletimPage = () => {
       });
   };
 
+  const estiloParagrafo = {
+    lineHeight: "1.8", // Define o espaçamento entre linhas desejado
+  };
+
+  const renderText = (text: string) => {
+    const paragraphs = text.split("\n");
+    return paragraphs.map((paragraph: any, index: any) => (
+      <p key={index}>{paragraph}</p>
+    ));
+  };
+
   const gerarDocumento = () => {
     const documentoGerado = (
       <>
@@ -62,19 +73,21 @@ const BoletimPage = () => {
           <div className="divConteudoDoc">
             <p className="pDoc">
               1º PARTE SERVIÇOS DIÁRIOS:
-              <p>{servicos}</p>
+              <p>{renderText(servicos)}</p>
             </p>
             <p className="pDoc">
               2º PARTE INSTRUÇÂO E OPERAÇÔES POLICIAIS MILITARES:
-              <p>{instrucao}</p>
+              <p>{renderText(instrucao)}</p>
             </p>
             <p className="pDoc">
               3º PARTE ASSUNTOS GERAIS E ADMINISTRATIVOS:
-              <p> {assunto}</p>
+              <p style={estiloParagrafo}>
+                {renderText(assunto)} <br />
+              </p>
             </p>
             <p className="pDoc">
               4º PARTE JUSTIÇA E DISCIPLINA:
-              <p>{justica}</p>
+              <p>{renderText(justica)}</p>
             </p>
             <div className="divAssina">
               <p>
@@ -128,8 +141,9 @@ const BoletimPage = () => {
             {" "}
             3º Parte Assuntos Gerais e Administrativos
           </label>
-          <input
-            type="text"
+          <textarea
+            rows={4}
+            cols={50}
             id="3assunstosgerais"
             placeholder="Ex: Assunto "
             value={assunto}
