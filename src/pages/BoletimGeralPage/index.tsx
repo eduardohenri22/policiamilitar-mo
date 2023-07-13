@@ -45,6 +45,13 @@ const BoletimPage = () => {
       });
   };
 
+  const renderText = (text: string) => {
+    const paragraphs = text.split("\n");
+    return paragraphs.map((paragraph: any, index: any) => (
+      <p key={index}>{paragraph}</p>
+    ));
+  };
+
   const gerarDocumento = () => {
     const documentoGerado = (
       <>
@@ -57,23 +64,23 @@ const BoletimPage = () => {
           <div className="divConteudoDoc">
             1º PARTE SERVIÇOS DIÁRIOS:
             <p>
-              <p className="pDoc">{servicos}</p>
+              <p className="pDoc">{renderText(servicos)}</p>
             </p>
             2º PARTE INSTRUÇÂO E OPERAÇÔES POLICIAIS MILITARES:
             <p>
-              <p className="pDoc">{instrucao}</p>
+              <p className="pDoc">{renderText(instrucao)}</p>
             </p>
             3º PARTE ASSUNTOS GERAIS E ADMINISTRATIVOS:
             <p>
-              <p className="pDoc"> {assunto}</p>
+              <p className="pDoc"> {renderText(assunto)}</p>
             </p>
             4º PARTE JUSTIÇA E DISCIPLINA:
             <p>
-              <p className="pDoc">{justica}</p>
+              <p className="pDoc">{renderText(justica)}</p>
             </p>
             <div className="divAssina">
               <p>
-                ASSINA: <span>{assinatura}</span>
+                ASSINA: <span>{renderText(assinatura)}</span>
               </p>
               <img src={logoMorumbi} />
             </div>
@@ -104,16 +111,18 @@ const BoletimPage = () => {
         </div>
         <div className="divInputs">
           <label htmlFor="1parteservicos"> 1º Parte Serviços Diários</label>
-          <input
-            type="text"
+          <textarea
+            rows={4}
+            cols={50}
             id="1parteservicos"
             placeholder="Ex: Administrativo "
             value={servicos}
             onChange={(e) => setServicos(e.target.value)}
           />
           <label htmlFor="2parteinstrucao">2º Parte Instrução e Operação</label>
-          <input
-            type="text"
+          <textarea
+            rows={4}
+            cols={50}
             id="2parteinstrucao"
             placeholder="Ex: Seleção externa.. "
             value={instrucao}
@@ -123,16 +132,18 @@ const BoletimPage = () => {
             {" "}
             3º Parte Assuntos Gerais e Administrativos
           </label>
-          <input
-            type="text"
+          <textarea
+            rows={4}
+            cols={50}
             id="3assunstosgerais"
-            placeholder="Ex: Assunto "
+            placeholder="Ex: Assunto gerais"
             value={assunto}
             onChange={(e) => setAssunto(e.target.value)}
           />
           <label htmlFor="4justica">4º Parte Justiça e Disciplina</label>
-          <input
-            type="text"
+          <textarea
+            rows={4}
+            cols={50}
             id="4justica"
             placeholder="Justiça e disciplina "
             value={justica}

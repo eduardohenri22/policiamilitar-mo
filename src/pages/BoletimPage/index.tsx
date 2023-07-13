@@ -122,16 +122,18 @@ const BoletimPage = () => {
         </div>
         <div className="divInputs">
           <label htmlFor="1parteservicos"> 1º Parte Serviços Diários</label>
-          <input
-            type="text"
+          <textarea
+            rows={4}
+            cols={50}
             id="1parteservicos"
             placeholder="Ex: Administrativo "
             value={servicos}
             onChange={(e) => setServicos(e.target.value)}
           />
           <label htmlFor="2parteinstrucao">2º Parte Instrução e Operação</label>
-          <input
-            type="text"
+          <textarea
+            rows={4}
+            cols={50}
             id="2parteinstrucao"
             placeholder="Ex: Seleção externa.. "
             value={instrucao}
@@ -150,8 +152,9 @@ const BoletimPage = () => {
             onChange={(e) => setAssunto(e.target.value)}
           />
           <label htmlFor="4justica">4º Parte Justiça e Disciplina</label>
-          <input
-            type="text"
+          <textarea
+            rows={4}
+            cols={50}
             id="4justica"
             placeholder="Justiça e disciplina "
             value={justica}
