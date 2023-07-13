@@ -43,8 +43,7 @@ export const StyledBoletimGeral = styled.div`
   .pDoc {
     display: flex;
     flex-direction: column;
-
-    font-weight: 700;
+    font-weight: 600;
   }
 
   .introducaoDoc > h1 {

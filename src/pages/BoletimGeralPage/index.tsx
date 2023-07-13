@@ -64,23 +64,32 @@ const BoletimPage = () => {
           <div className="divConteudoDoc">
             1º PARTE SERVIÇOS DIÁRIOS:
             <p>
-              <p className="pDoc">{renderText(servicos)}</p>
+              <p style={{ whiteSpace: "pre-wrap" }} className="pDoc">
+                {renderText(servicos)}
+              </p>
             </p>
             2º PARTE INSTRUÇÂO E OPERAÇÔES POLICIAIS MILITARES:
             <p>
-              <p className="pDoc">{renderText(instrucao)}</p>
+              <p style={{ whiteSpace: "pre-wrap" }} className="pDoc">
+                {renderText(instrucao)}
+              </p>
             </p>
             3º PARTE ASSUNTOS GERAIS E ADMINISTRATIVOS:
             <p>
-              <p className="pDoc"> {renderText(assunto)}</p>
+              <p style={{ whiteSpace: "pre-wrap" }} className="pDoc">
+                {" "}
+                {renderText(assunto)}
+              </p>
             </p>
             4º PARTE JUSTIÇA E DISCIPLINA:
             <p>
-              <p className="pDoc">{renderText(justica)}</p>
+              <p style={{ whiteSpace: "pre-wrap" }} className="pDoc">
+                {renderText(justica)}
+              </p>
             </p>
             <div className="divAssina">
               <p>
-                ASSINA: <span>{renderText(assinatura)}</span>
+                ASSINA: <span>{assinatura}</span>
               </p>
               <img src={logoMorumbi} />
             </div>

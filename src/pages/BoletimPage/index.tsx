@@ -73,19 +73,17 @@ const BoletimPage = () => {
           <div className="divConteudoDoc">
             <p className="pDoc">
               1º PARTE SERVIÇOS DIÁRIOS:
-              <p>{renderText(servicos)}</p>
+              <p style={{ whiteSpace: "pre-wrap" }}>{renderText(servicos)}</p>
             </p>
             <p className="pDoc">
               2º PARTE INSTRUÇÂO E OPERAÇÔES POLICIAIS MILITARES:
-              <p>{renderText(instrucao)}</p>
+              <p style={{ whiteSpace: "pre-wrap" }}>{renderText(instrucao)}</p>
             </p>
             <p className="pDoc">
               3º PARTE ASSUNTOS GERAIS E ADMINISTRATIVOS:
-              <p style={estiloParagrafo}>
-                {renderText(assunto)} <br />
-              </p>
+              <p style={{ whiteSpace: "pre-wrap" }}>{renderText(assunto)}</p>
             </p>
-            <p className="pDoc">
+            <p style={{ whiteSpace: "pre-wrap" }} className="pDoc">
               4º PARTE JUSTIÇA E DISCIPLINA:
               <p>{renderText(justica)}</p>
             </p>

@@ -102,8 +102,10 @@ export const StyledInquerito = styled.div`
     background: rgb(164, 164, 164);
   }
 
-  .numeroInqueritoIntroducao {
+  .numeroInquerito {
     display: flex;
+    align-items: center;
+    text-align: center;
     justify-content: center;
     margin-top: 18px;
   }
@@ -172,6 +174,7 @@ export const StyledInquerito = styled.div`
   .pAssinaInquerito {
     position: absolute;
     bottom: 40px;
+    top: 10px;
     left: 0px;
     justify-content: space;
     font-family: "Pinyon Script", cursive;

@@ -81,12 +81,12 @@ const InqueritoPage = () => {
           <div>
             <h1>Inquérito</h1>
             <h2>Corregedoria Da Policia Militar Do Estado de São Paulo</h2>
-            <div className="numeroInqueritoIntroducao"></div>
           </div>
         </div>
         <div className="divMainInquerito">
           <p>
-            {conteudoInquerito} <span>{numeroInquerito}</span>
+            {conteudoInquerito}{" "}
+            <span className="numeroInquerito">{numeroInquerito}</span>
           </p>
           {selectedOption === "opcao1" && (
             <p>
